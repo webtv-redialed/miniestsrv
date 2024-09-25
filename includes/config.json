@@ -1,0 +1,104 @@
+{
+  "config": {
+    "service_ip": "127.0.0.1",
+    "serviceType": "Production",
+    "ServiceVaults": [
+      "ServiceVault"
+    ],
+    "ServiceTemplates": [
+      "UserTemplates",
+      "ServiceDeps/templates"
+    ],
+    "ssid_block_list": [
+      "exampleBitch"
+    ],
+    "ServiceDeps": "ServiceDeps",
+    "SessionStore": "SessionStore",
+    "SharedROMCache": "SharedROMCache",
+    "enable_shared_romcache": false,
+    "service_owner": "somebody",
+    "service_owner_account": "huh",
+    "service_owner_contact": "what",
+    "service_owner_contact_method": "Discord",
+    "service_name": "WebTV",
+    "service_logo": "WebTVLogoJewel.gif",
+    "service_splash_logo": "file://ROM/images/SplashLogo1.gif",
+    "hide_ssid_in_logs": false,
+    "filter_passwords_in_logs": false,
+    "post_percentages": [
+      0,
+      25,
+      50,
+      100
+    ],
+    "verbosity": 4,
+    "socket_timeout": 86400,
+    "post_data_socket_timeout": 30,
+    "error_log_file": "errors.log",
+    "catchall_file_name": "catchall.js",
+    "hide_incomplete_features": true,
+    "enable_lzpf_compression": true,
+    "enable_gzip_compression": true,
+    "show_detailed_splash": true,
+    "show_diskmap": false,
+    "unauthorized_url": "wtv-head-waiter:/login?",
+    "enable_port_isolation": true,
+    "allow_guests": false,
+    "domain_name": "webtv.zone",
+    "user_accounts": {
+      "max_users_per_account": 6,
+      "min_username_length": 5,
+      "max_username_length": 18
+    },
+    "passwords": {
+      "enabled": true,
+      "min_length": 4,
+      "max_length": 10,
+      "form_size": 16
+    },
+    "errorMessages": {
+      "400": "${service_name} ran into a technical problem. Please try again.",
+      "401": "Authorization Required.",
+      "403": "The publisher of that page has not authorized you to view it.",
+      "404": "The service could not find the requested page.",
+      "500": "${service_name} ran into a technical problem. Please try again."
+    },
+    "lockdownWhitelist": [
+      "wtv-1800:/preregister",
+      "wtv-head-waiter:/login",
+      "wtv-head-waiter:/ValidateLogin",
+      "wtv-head-waiter:/login-stage-two",
+      "wtv-head-waiter:/relogin",
+      "wtv-head-waiter:/ROMCache/Spacer.gif",
+      "wtv-head-waiter:/ROMCache/NameStrip.gif",
+      "wtv-head-waiter:/images/PasswordBanner.gif",
+      "wtv-head-waiter:/ROMCache/UtilityBullet.gif",
+      "wtv-head-waiter:/images/NameBanner.gif",
+      "wtv-head-waiter:/bad-disk",
+      "wtv-head-waiter:/images/signin_new_mail.gif",
+      "wtv-head-waiter:/images/signin_no_mail.gif",
+      "wtv-head-waiter:/ROMCache/NameBanner.gif",
+      "wtv-head-waiter:/ROMCache/PasswordBanner.gif",
+      "wtv-head-waiter:/setbirthday",
+      "wtv-head-waiter:/validatebirthday",
+      "wtv-log:/log",
+      "wtv-head-waiter:/images/MessageGradient.gif"
+    ],
+    "sessionClearTimeout": 30000
+  },
+  "services": {
+    "wtv-1800": {
+      "port": 1615,
+      "connections": 1,
+      "flags": "0x00000004",
+      "send_tellyscripts": true,
+      "privileged": true
+    },
+    "wtv-head-waiter": {
+      "port": 1601,
+      "flags": "0x00000004",
+      "connections": 1,
+      "privileged": true
+    }
+  }
+}
