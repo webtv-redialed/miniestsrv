@@ -40,10 +40,10 @@ data = `<html>
     <td colspan=2  width=120 height=312  valign=top align=left bgcolor=000000>
         <font size="+1">
 <b>
-WebTV Redialed no longer operates at the server you're currently connecting to.
+WebTV Redialed no longer operates at the server your WebTV reciever is currently connecting to.
 </b>
 <p>
-You will need to update your routes. If you use DreamPi to connect, re-flash your Pi with our latest DreamPi image. If you're on a landline or VoIP, unplug your receiver, plug it back in, and press "Moved".
+You will need to update your routes. If you use DreamPi to connect, re-flash your Raspberry Pi with our latest DreamPi image. If you are using a landline or VoIP telephone connection, unplug your receiver, plug it back in, and press "Moved".
 <p>
 If you have any further questions, join our Discord server, which is linked on our web site: http://webtv.zone/
 </table>
