@@ -38,7 +38,6 @@ data = `<html>
         
 <tr>
     <td colspan=2  width=120 height=312  valign=top align=left bgcolor=000000>
-        <font size="+1">
 <b>
 WebTV Redialed no longer operates at the server your WebTV reciever is currently connecting to.
 </b>
